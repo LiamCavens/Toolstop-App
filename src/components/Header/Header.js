@@ -18,16 +18,6 @@ export default class Header extends Component {
                 <Link to={`/`}>
                     <img src="/toolstopLogo.png" alt="toolstop banner" />
                 </Link>
-                {/* <input
-                    className={style.site_search}
-                    data-search-quick=""
-                    name="search_query"
-                    id="search_query"
-                    data-error-message="Search field cannot be empty."
-                    placeholder="Search product or brand..."
-                    autoComplete="off"
-                    maxLength="255"
-                ></input> */}
                 <Autocomplete
                     freeSolo
                     id="autocomplete-search"
