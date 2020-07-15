@@ -15,7 +15,6 @@ class BrandTools extends Component {
     }
 
     getBrandTools = (brand) => {
-        console.log("getbrandTools");
         const brandUrl = `${url}/${brand}`;
         fetch(brandUrl)
             .then((res) => res.json())
@@ -28,7 +27,6 @@ class BrandTools extends Component {
     };
 
     render() {
-        console.log(this.state);
         return (
             <div className={style.top_tools}>
                 <h2 className={style.brand_title}>{this.state.brand}</h2>

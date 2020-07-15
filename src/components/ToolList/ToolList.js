@@ -7,8 +7,7 @@ export default class ToolList extends Component {
     };
 
     render() {
-        console.log("Tool List");
-        console.log(this.props);
+        // A throbber/loader would go in here in future
         if (!this.props.tools) return null;
         const allTools = this.props.tools.map((tool, index) => {
             const toolid = index;

@@ -3,6 +3,7 @@ import TopTools from "../components/TopTools/TopTools";
 import TopForty from "../components/TopForty/TopForty";
 import BrandTools from "./BrandTools/BrandTools";
 import Header from "../components/Header/Header";
+import Navbar from "../components/Navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const top40url = "https://product-fetch-toolstop.herokuapp.com/top40";
@@ -27,11 +28,10 @@ class Home extends Component {
     };
 
     render() {
-        console.log(this.state);
         return (
             <Router>
                 <Header tools={this.state.top40} />
-                <nav>Navbar</nav>
+                <Navbar />
                 <Switch>
                     <Route exact path="/" component={TopTools} />
                     <Route
@@ -41,6 +41,7 @@ class Home extends Component {
                     />
                     <Route exact path="/tools/:brand" component={BrandTools} />
                 </Switch>
+                <footer>Footer</footer>
             </Router>
         );
     }
