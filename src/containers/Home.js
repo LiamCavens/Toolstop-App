@@ -41,7 +41,6 @@ class Home extends Component {
                     />
                     <Route exact path="/tools/:brand" component={BrandTools} />
                 </Switch>
-                <footer>Footer</footer>
             </Router>
         );
     }
