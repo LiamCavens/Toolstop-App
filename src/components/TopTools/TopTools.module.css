@@ -1,0 +1,24 @@
+.top_tools {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.top_tools_top40 {
+    max-width: 100%;
+}
+
+.top_tools_brands {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top_tools_brand {
+    width: 200px;
+    flex: 1 0 21%;
+}
+
+.top_tools_brand img {
+    width: 100%;
+    height: auto;
+}

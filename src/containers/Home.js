@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import TopTools from "../components/TopTools/TopTools";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const top40url = "https://product-fetch-toolstop.herokuapp.com/top40";
 class Home extends Component {
@@ -24,10 +26,15 @@ class Home extends Component {
     render() {
         console.log(this.state);
         return (
-            <div>
+            <Router>
                 <header>Header</header>
                 <nav>Navbar</nav>
-            </div>
+                <Switch>
+                    <Route exact path="/" component={TopTools} />
+                    {/* <Route path="/roster" component={Roster} />
+                    <Route path="/schedule" component={Schedule} /> */}
+                </Switch>
+            </Router>
         );
     }
 }
