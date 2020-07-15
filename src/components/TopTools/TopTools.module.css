@@ -22,3 +22,17 @@
     width: 100%;
     height: auto;
 }
+
+@media (max-width: 500px) {
+    .top_tools_brands {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top_tools_brand {
+        width: 100%;
+    }
+    .top_tools {
+        margin: 0;
+    }
+}

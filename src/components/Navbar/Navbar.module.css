@@ -26,3 +26,16 @@
     color: firebrick;
     background-color: #fff;
 }
+
+@media (max-width: 1060px) {
+    .navbar_list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        margin: 0;
+    }
+}
