@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-import style from "./TopForty.module.css";
+import style from "./ToolList.module.css";
 
-export default class TopTools extends Component {
+export default class ToolList extends Component {
     getVATPrice = (toolPrice) => {
         return (toolPrice * 1.2).toFixed(2);
     };
 
     render() {
-        if (!this.props.allTools) return null;
-        const allTools = this.props.allTools.map((tool, index) => {
+        console.log("Tool List");
+        console.log(this.props);
+        if (!this.props.tools) return null;
+        const allTools = this.props.tools.map((tool, index) => {
             const toolid = index;
             return (
                 <li key={toolid} className={style.tool_list_item}>

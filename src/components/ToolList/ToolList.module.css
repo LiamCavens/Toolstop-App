@@ -1,0 +1,48 @@
+.tool_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.tool_list_item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px;
+    padding: 5px 15px 0;
+    background-color: whitesmoke;
+}
+
+.tool_list_item img {
+    border: grey 1px solid;
+}
+
+.tool_list_item a {
+    text-decoration: none;
+}
+
+.tool_name {
+    color: navy;
+    font-weight: 700;
+}
+
+.tool_name:hover {
+    color: dodgerblue;
+}
+
+.tool_price {
+    /* This allows the price to be consistant at the bottom of the list item */
+    margin-top: auto;
+}
+.tool_price_VAT {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 15px;
+    color: firebrick;
+}
+
+.tool_price_noVAT {
+    font-size: 12px;
+    color: #888;
+}

@@ -1,0 +1,12 @@
+.site_header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.site_search {
+    width: 300px;
+    padding-left: 20px;
+    border: navy solid 2px;
+    font-weight: 700;
+}
